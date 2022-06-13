@@ -82,14 +82,14 @@ header{
     text-decoration: none;
 }
 /* Navigation bar */
-@media (min-width: 600px){
+@media (min-width: 900px){
     header{
         background: rgb(17, 17, 17);
         width: 100%;
         justify-content: left;
         position: absolute;
         z-index: 10;
-        padding-left: 10rem;
+        justify-content: center;
         border-bottom: 1px solid rgb(101, 254, 254);
     }
     .fixed{
@@ -125,7 +125,7 @@ header{
     
 }
 /* Hamburger */
-@media (max-width: 600px){
+@media (max-width: 900px){
     .nav {
         position: fixed;
         background: var(--clr-dark);
@@ -190,19 +190,49 @@ header{
         bottom: 6px;
     }
 }
+@media (min-width: 1200px){
+    header {
+        padding-left: 10rem;
+        justify-content: left;
+    }
+}
 
 /* Intro */
 .start {
     position: relative;
     height: 76vh;
 }
+@media (max-width: 1200) {
+    .backgroundLine {
+        position: relative;
+        width: 8px; 
+        height: 150vh;
+        top: -55vh;
+        background-color: var(--clr-text);
+        transform: rotate(.60turn);
+        z-index: -1;
+        overflow: hidden;
+    }
+}
+@media (max-width: 600px){
+.backgroundLine {
+    position: relative;
+    width: 4px; 
+    top: -275px;
+    height: 100vh;
+    background-color: var(--clr-text);
+    transform: rotate(.60turn);
+    z-index: -1;
+    overflow: hidden;
+}
+}
 @media (min-width: 600px){
     .start {
+        padding-top: 5rem;
+        padding-left: 4rem;
         width: max-content;
         height: 76vh;
         overflow: hidden;
-        padding-top: 10rem;
-        padding-left: 20rem;
     }
     .introText, .introText2 {
         color: var(--clr-text);
@@ -227,6 +257,13 @@ header{
         overflow: hidden;
     }
 }
+@media (min-width: 1200px){
+    .start {
+        padding-top: 10rem;
+        padding-left: 15rem;
+    }
+}
+
 .introTitle {
     font-size: var(--fs-body);
 }
@@ -304,11 +341,14 @@ header{
     }
     .aboutMeText {
         font-size: var(--fs-h3);
-        padding: 0 25rem;
         line-height: 2.75rem;
     }
 }
-
+@media (min-width: 900px){
+    .aboutMeText {
+    padding: 0 10rem;
+    }
+}
 /* Footer */
 footer {
     background: #111;
@@ -366,9 +406,9 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    padding: 0 30rem;
 }
 }
+
 .projectsTitle{
     width: fit-content;
     text-align: center;
