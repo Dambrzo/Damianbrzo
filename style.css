@@ -228,8 +228,8 @@ header{
 }
 @media (min-width: 600px){
     .start {
-        padding-top: 5rem;
-        padding-left: 4rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
         width: max-content;
         height: 76vh;
         overflow: hidden;
