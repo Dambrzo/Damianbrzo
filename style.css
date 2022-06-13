@@ -262,7 +262,7 @@ header{
 }
 @media (min-width: 1200px){
     .start {
-        padding-top: 10rem;
+        padding-top: 15vh;
         padding-left: 15rem;
     }
 }
