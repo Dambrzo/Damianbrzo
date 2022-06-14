@@ -263,7 +263,7 @@ header{
         overflow: hidden;
     }
 }
-@media (min-width: 1200px){
+@media (min-width: 1400px){
     .start {
         padding-top: 15vh;
         padding-left: 15rem;
