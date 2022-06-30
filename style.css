@@ -471,8 +471,8 @@ footer {
 }
 @media (min-width: 900px) {
     .gridWrapper{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 25px;
         grid-row-gap: 25px;
     }
@@ -500,11 +500,22 @@ footer {
 }
 .projectsContainer {
     background-color: #111;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
 }
 @media (max-width: 300px) {
     .projectsContainer {
         padding: 0rem 0rem;
+    }
+}
+@media (min-width: 600px) {
+    .projectsTitle {
+    margin: 3rem auto;
+    padding: 1rem 10rem;
+    }
+}
+@media (min-width: 1200px) {
+    .projectsContainer {
+        padding: 3rem 3rem;
     }
 }
 .projectsTitle {
