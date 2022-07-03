@@ -528,5 +528,6 @@ footer {
     color: rgb(201, 198, 198);
 }
 .projectText {
-    color: rgba(201, 198, 198, 0.6);
+    /*color: rgba(201, 198, 198, 0.6);*/
+    color: red;
 }
